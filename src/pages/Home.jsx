@@ -2,8 +2,10 @@ import Navbar from "../components/Navbar";
 import WhyPivot from "../components/WhyPivot";
 import HowItWorks from "../components/HowItWorks";
 import { ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
   return (
     <>
       <Navbar />
@@ -28,9 +30,8 @@ function Home() {
           </p>
 
           <div className="mt-12 flex flex-col sm:flex-row justify-center gap-4">
-            <button className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-full text-lg transition flex items-center gap-2">
-                Tell Your Story
-                <ArrowRight size={20} />
+           <button onClick={() => navigate("/story")} className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-full text-lg transition flex items-center gap-2">
+              Tell Your Story
             </button>
 
             <button className="border border-slate-300 hover:border-indigo-500 px-8 py-4 rounded-full text-lg transition">
