@@ -21,8 +21,9 @@ function Story() {
         </h1>
 
         <p className="mt-5 text-lg text-slate-600 leading-8">
-          Sometimes the hardest part of moving forward is finding the words.
-          Tell us what changed. There are no right or wrong answers.
+          This is a safe space.
+Your story doesn't have to be perfect.
+It just has to be yours.
         </p>
 
         <div className="mt-10">

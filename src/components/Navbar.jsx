@@ -8,7 +8,7 @@ function Navbar() {
   </h1>
 
   <p className="text-xs text-slate-500">
-    Find your next chapter.
+    Your next chapter starts here.
   </p>
 </div>
 

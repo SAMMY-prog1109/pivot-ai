@@ -1,13 +1,13 @@
-import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
 function Reflection() {
+  const navigate = useNavigate();
   const [answers, setAnswers] = useState({
     challenge: "",
     passion: "",
     future: "",
   });
-
   return (
     <div className="min-h-screen bg-slate-50 flex justify-center items-center px-6">
       <div className="max-w-3xl w-full bg-white rounded-3xl shadow-lg p-10">
@@ -73,10 +73,9 @@ function Reflection() {
 
         </div>
 
-        <button className="mt-10 bg-indigo-600 text-white px-8 py-4 rounded-full flex items-center gap-2">
-          Continue
-          <ArrowRight size={20} />
-        </button>
+        <button onClick={() => navigate("/results")}>
+  Continue
+</button>
 
       </div>
     </div>

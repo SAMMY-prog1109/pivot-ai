@@ -13,21 +13,21 @@ function WhyPivot() {
         </p>
 
         <div className="grid md:grid-cols-3 gap-8 mt-16">
-          <div className="rounded-2xl bg-slate-50 p-8 shadow-sm">
+          <div className="rounded-4xl bg-slate-50 p-8 shadow-sm">
             <h3 className="text-xl font-semibold">💙 Reflect</h3>
             <p className="mt-3 text-slate-600">
               Tell your story in your own words.
             </p>
           </div>
 
-          <div className="rounded-2xl bg-slate-50 p-8 shadow-sm">
+          <div className="rounded-4xl bg-slate-50 p-8 shadow-sm">
             <h3 className="text-xl font-semibold">🧭 Rediscover</h3>
             <p className="mt-3 text-slate-600">
               Explore strengths and opportunities you may not have considered.
             </p>
           </div>
 
-          <div className="rounded-2xl bg-slate-50 p-8 shadow-sm">
+          <div className="rounded-4xl bg-slate-50 p-8 shadow-sm">
             <h3 className="text-xl font-semibold">🚀 Move Forward</h3>
             <p className="mt-3 text-slate-600">
               Get a practical roadmap for your next chapter.
