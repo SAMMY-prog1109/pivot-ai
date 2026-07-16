@@ -13,9 +13,27 @@ function Reflection() {
     <div className="min-h-screen bg-slate-50 flex justify-center items-center px-6">
       <div className="max-w-3xl w-full bg-white rounded-3xl shadow-lg p-10">
 
-        <span className="bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-semibold">
-          Step 2 of 4
-        </span>
+        <div className="mb-8">
+
+  <div className="flex justify-between text-sm mb-2">
+
+    <span className="font-semibold text-violet-600">
+      Step 2 of 4
+    </span>
+
+    <span>
+      50%
+    </span>
+
+  </div>
+
+  <div className="w-full h-2 bg-gray-200 rounded-full">
+
+    <div className="w-1/2 h-2 bg-violet-600 rounded-full"></div>
+
+  </div>
+
+</div>
 
         <h1 className="text-4xl font-bold mt-6">
           Let's Understand You Better
@@ -74,8 +92,12 @@ function Reflection() {
 
         </div>
 
-        <button onClick={() => navigate("/results")}>
+        <button
+  onClick={() => navigate("/loading")}
+  className="mt-8 bg-violet-600 hover:bg-violet-700 text-white px-8 py-4 rounded-full font-semibold flex items-center gap-2 transition-all duration-300 hover:scale-105"
+>
   Continue
+  <ArrowRight size={20} />
 </button>
 
       </div>

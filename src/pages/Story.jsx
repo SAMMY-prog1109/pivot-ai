@@ -1,5 +1,6 @@
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 function Story() {
   const navigate = useNavigate();
@@ -32,10 +33,12 @@ It just has to be yours.
           </label>
 
           <textarea
-            rows="8"
-            placeholder="Example: Share what happened, how you're feeling, and what you're hoping for next..."
-            className="w-full rounded-2xl border border-slate-300 p-5 text-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 resize-none"
-          />
+  rows="8"
+  value={story}
+  onChange={(e) => setStory(e.target.value)}
+  placeholder="Share what happened, how you're feeling, and what you're hoping for next..."
+  className="w-full rounded-2xl border border-slate-300 p-5 text-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 resize-none"
+/>
         </div>
 
         <button onClick={() => navigate("/reflection")} className="mt-8 bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-full flex items-center gap-2 transition">
